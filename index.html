@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareerAI — Your Personal AI Career Consultant</title>
+  <meta name="description" content="CareerAI reads your resume and builds a personal career strategy: skills, gaps, role matches, what-if scenarios and a 16-task action plan.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Cpath d='M18 40l10-12 8 7 10-14' stroke='white' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="logo">Career<b>AI</b></span>
+        <span class="tag">Personal career consultant</span>
+      </div>
+      <nav id="nav">
+        <a data-view="dashboard">Dashboard</a>
+        <a data-view="profile">My Profile</a>
+        <a data-view="resume">Resume Analysis</a>
+        <a data-view="options">Career Options</a>
+        <a data-view="strategy">Strategy Builder</a>
+        <a data-view="compare">Compare Careers</a>
+        <a data-view="whatif">What-If Scenarios</a>
+        <a data-view="plan">My Action Plan</a>
+        <a data-view="report">AI Career Report</a>
+      </nav>
+      <div class="side-foot">
+        <button class="ghost" id="restart">Start over</button>
+        <p>Runs in your browser. Your resume never leaves your device.</p>
+      </div>
+    </aside>
+
+    <header class="topbar">
+      <span class="logo">Career<b>AI</b></span>
+      <button id="menuBtn" aria-label="Open menu">☰</button>
+    </header>
+
+    <main id="main"></main>
+  </div>
+
+  <!-- Resume file readers (PDF and Word) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
